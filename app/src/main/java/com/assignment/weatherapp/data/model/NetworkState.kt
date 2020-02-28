@@ -14,4 +14,6 @@ data class NetworkState constructor(
         val START: NetworkState = NetworkState(Status.START, "Running")
         val ERROR: NetworkState = NetworkState(Status.ERROR, "Failed")
     }
+
+
 }

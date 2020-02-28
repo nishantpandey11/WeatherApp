@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="go">Go</string>
+    <string name="city">City :  %s</string>
+    <string name="temp">Temp :  %s</string>
+    <string name="pressure">Pressure :  %s</string>
+    <string name="humidity">Humidity :  %s</string>
+    <string name="visibility">Visibility :  %s</string>
+    <string name="forecast">Get Forecast</string>
+    <string name="loading">Loading…</string>
+    <string name="error_msg">Something went wrong ! Please try again.</string>
+    <string name="fetcing">Fetching…</string>
+    <string name="error_zip">Please enter a valid zip code</string>
+
 </resources>

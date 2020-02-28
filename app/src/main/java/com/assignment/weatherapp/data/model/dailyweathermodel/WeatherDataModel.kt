@@ -1,4 +1,6 @@
-package com.assignment.weatherapp.data.model.weathermodel
+package com.assignment.weatherapp.data.model.dailyweathermodel
+
+import java.io.Serializable
 
 data class WeatherDataModel (
 
@@ -15,4 +17,4 @@ data class WeatherDataModel (
 	val id : Int,
 	val name : String,
 	val cod : Int
-)
+): Serializable

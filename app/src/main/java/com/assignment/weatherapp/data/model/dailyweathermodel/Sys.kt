@@ -1,4 +1,4 @@
-package com.assignment.weatherapp.data.model.weathermodel
+package com.assignment.weatherapp.data.model.dailyweathermodel
 
 data class Sys (
 

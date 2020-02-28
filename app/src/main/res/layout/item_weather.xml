@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="mainData"
+            type="com.assignment.weatherapp.data.model.dailyweathermodel.Main" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="@dimen/margin_medium"
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="@{String.format(@string/temp,mainData.temp_min + `/`+ mainData.temp_max)}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="ffsfdgsg"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_margin="@dimen/margin_medium"
+            android:id="@+id/tv_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="@{String.format(@string/pressure,mainData.pressure)}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            tools:text="ffsfdgsg"/>
+        <TextView
+            android:layout_margin="@dimen/margin_medium"
+            android:id="@+id/tv_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="@{String.format(@string/humidity,mainData.humidity)}"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            tools:text="ffsfdgsg"/>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
